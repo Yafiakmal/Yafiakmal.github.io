@@ -13,7 +13,7 @@ echo "🚀 Deploy ke gh-pages..."
 git checkout gh-pages
 
 # Pastikan folder dist dari main diambil ulang
-git checkout main -- dist
+git checkout main -- docs
 
 git add .
 git commit -m "${2:-'deploy dist to gh-pages'}" || echo "⚠️  Tidak ada perubahan di dist, skip commit."
