@@ -15,7 +15,7 @@ git checkout gh-pages
 git checkout main -- dist
 
 git add .
-git commit -m "${2:-'deploy dist to gh-pages'}"
+git commit -m "${2:-'deploy dist to gh-pages'}" || echo "⚠️  Tidak ada perubahan di dist, skip commit."
 git push origin gh-pages
 
 # Kembali ke main
