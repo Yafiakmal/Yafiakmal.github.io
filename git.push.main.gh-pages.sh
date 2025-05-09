@@ -3,10 +3,11 @@
 # Exit kalau ada error
 set -e
 
-echo "📦 Commit perubahan di branch main..."
+echo "📦 Commit dan push perubahan di branch main..."
 git checkout main
 git add .
 git commit -m "${1:-'update content'}"
+git push origin main
 
 echo "🚀 Deploy ke gh-pages..."
 git checkout gh-pages
@@ -20,5 +21,4 @@ git push origin gh-pages
 
 # Kembali ke main
 git checkout main
-git push origin main
 echo "✅ Selesai!"
