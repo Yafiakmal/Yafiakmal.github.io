@@ -1,18 +1,34 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="flex flex-col min-h-screen">
+    <!-- HEADER -->
+    <header class="bg-gray-900 text-white">
+      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">MYA</h1>
+        <ul class="flex space-x-6">
+          <li><router-link to="/" class="hover:text-gray-300">Home</router-link></li>
+          <li><router-link to="/projects" class="hover:text-gray-300">Projects</router-link></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <div class="flex-1 container mx-auto min-w-screen">
+        <router-view />
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 text-center text-gray-600 text-sm py-4">
+      © Muhammad Yafi Akmal 2025
+    </footer>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
+
 
 <style scoped>
 .logo {
