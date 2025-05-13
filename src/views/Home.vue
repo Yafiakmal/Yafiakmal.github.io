@@ -26,9 +26,9 @@
     </div>
 
     <!-- Projects Section -->
-    <div class="w-full bg-gray-900 text-white py-12 px-6">
-      <div class="max-w-6xl mx-auto">
-        <h1 class="text-3xl font-semibold mb-8">Projects</h1>
+    <div class="h-[500px] w-full bg-gray-900 text-white py-12 px-25">
+      <div class="max-w-6xl mx-auto ">
+        <h1 class="text-3xl font-semibold mb-8 text-center">Projects</h1>
 
         <!-- Horizontal Scroll Container -->
         <div class="relative">
