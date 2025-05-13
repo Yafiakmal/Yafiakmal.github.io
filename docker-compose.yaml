@@ -1,14 +1,17 @@
+version: "3.8"
 services:
   app:
-    image: node:latest
+    build: .
     container_name: web-portofolio
     working_dir: /usr/src/app
     volumes:
       - .:/usr/src/app
     ports:
       - "3000:3000"
+      - "5173:5173"
+      - "4173:4173"
     environment:
       NODE_ENV: development
-    stdin_open: true # Set agar bisa interactive
-    tty: true # Menjaga terminal tetap aktif
-    command: bash -c "tail -f /dev/null" #bash -c "npm start" 
+    stdin_open: true
+    tty: true
+    command: bash -c "tail -f /dev/null"
