@@ -5,7 +5,7 @@
 <template>
   <div class="flex flex-col min-h-screen">
     <!-- HEADER -->
-    <header class="bg-gray-900 text-white">
+    <header class="bg-gray-900 text-white sticky top-0 z-50">
       <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
         <h1 class="text-2xl font-bold">MYA</h1>
         <ul class="flex space-x-6">
