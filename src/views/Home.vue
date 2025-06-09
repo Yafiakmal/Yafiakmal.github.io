@@ -13,7 +13,7 @@
 
       <!-- Left Content -->
       <div class="w-full md:w-1/2 space-y-4 text-center md:text-left">
-        <h1 class="text-4xl font-bold">Muhammad Yafi Akmal</h1>
+        <h1 class="text-4xl font-bold">Amira Ainun Mahya</h1>
         <h3 class="text-xl text-red-500 font-bold">Interest in BackEnd Web Developer</h3>
         <h3 class="text-l text-gray-600 italic">
           Undergraduate student in Telkom University Purwokerto. Accustomed to working independently and collaboratively
