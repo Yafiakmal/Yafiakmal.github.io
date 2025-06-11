@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 23
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
@@ -24,9 +24,13 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to gh-pages
+      - name: Add .nojekyll
+        run: touch dist/.nojekyll
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./docs
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./dist
           publish_branch: gh-pages
+          force_orphan: true
