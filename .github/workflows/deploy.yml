@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Deploy Vite to GitHub Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +25,13 @@ jobs:
         run: npm run build
 
       - name: Add .nojekyll
-        run: touch dist/.nojekyll
+        run: |
+          if [ -d dist ]; then
+            touch dist/.nojekyll
+          else
+            echo "Build failed: dist/ not found"
+            exit 1
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
