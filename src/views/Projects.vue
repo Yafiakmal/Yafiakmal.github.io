@@ -4,7 +4,7 @@
             <h1 class="text-3xl font-semibold mb-8 text-gray-900">Projects</h1>
             <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 <ProjectCard v-for="(project, i) in projects" :key="i" :imagePath="project.imagePath" :title="project.title"
-              :description="project.description"/>
+              :description="project.description" :link="project.link"/>
             </div>
         </div>
     </div>

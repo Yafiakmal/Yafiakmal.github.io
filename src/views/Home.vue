@@ -13,7 +13,7 @@
 
       <!-- Left Content -->
       <div class="w-full md:w-1/2 space-y-4 text-center md:text-left">
-        <h1 class="text-4xl font-bold">Amira Ainun Mahya</h1>
+        <h1 class="text-4xl font-bold">Muhammad Yafi Akmal</h1>
         <h3 class="text-xl text-red-500 font-bold">Interest in BackEnd Web Developer</h3>
         <h3 class="text-l text-gray-600 italic">
           Undergraduate student in Telkom University Purwokerto. Accustomed to working independently and collaboratively
@@ -42,7 +42,7 @@
         <div class="relative">
           <div class="flex space-x-6 overflow-x-auto no-scrollbar snap-x snap-mandatory px-1">
             <ProjectCard v-for="(project, i) in projects" :key="i" :imagePath="project.imagePath" :title="project.title"
-              :description="project.description" class="snap-start shrink-0 w-[90%] sm:w-[60%] md:w-1/3" />
+              :description="project.description" :link="project.link" class="snap-start shrink-0 w-[90%] sm:w-[60%] md:w-1/3" />
           </div>
 
           <!-- Optional: Dot navigation placeholder -->
