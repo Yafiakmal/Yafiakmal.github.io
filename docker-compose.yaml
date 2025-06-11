@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   app:
-    build: .
+    images: node:lts
     container_name: web-portofolio
     working_dir: /usr/src/app
     volumes:
