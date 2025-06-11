@@ -6,7 +6,7 @@
       <!-- Right Content (Photo) - Ditaruh duluan untuk HP -->
       <div class="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
         <div class="w-48 h-48 rounded-full overflow-hidden">
-          <img src="../../assets/beach-anime-self.png" alt="Foto Muhammad Yafi Akmal"
+          <img src="/assets/beach-anime-self.png" alt="Foto Muhammad Yafi Akmal"
             class="w-full h-full object-cover">
         </div>
       </div>

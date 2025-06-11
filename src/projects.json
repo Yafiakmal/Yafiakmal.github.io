@@ -1,6 +1,6 @@
 [
     {
-      "imagePath": "../assets/project-1.jpg",
+      "imagePath": "/assets/project-1.jpg",
       "title": "JWT Authentication REST API",
       "description": "REST API that implement jwt token for Authentication, using access token and refresh token concept. \nclick for full description ",
       "link": "https://github.com/Yafiakmal/simple-login-api-nodejs"
