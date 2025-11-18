@@ -1,6 +1,7 @@
 import Header from "./component/Header/Header"
 import MyProfile from "./component/Hero/MyProfile"
 import MyProject from "./component/Hero/MyProject"
+import Footer from "./component/Footer/Footer"
 function App() {
 
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <MyProfile />
       <MyProject />
+      <Footer />
     </div>
   )
 }

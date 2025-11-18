@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Project 1",
+        "description": "Description for project 1",
+        "link_view": "https://example.com",
+        "link_source": "https://github.com",
+        "link_cover": "/images/project1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Project 2",
+        "description": "Description for project 2",
+        "link_view": "https://example.com",
+        "link_source": "https://github.com",
+        "link_cover": "/images/project2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Project 3",
+        "description": "Description for project 2",
+        "link_view": "https://example.com",
+        "link_source": "https://github.com",
+        "link_cover": "/images/project2.jpg"
+    }
+]

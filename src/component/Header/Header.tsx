@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <>
-            <div className="header px-2 h-[70px] w-screen bg-blue-200 flex justify-between">
+            <div className="header px-2 h-[70px] w-full bg-blue-200 flex justify-between">
                 <div className="logo h-full w-[20%] bg-green-100 flex justify-center items-center">
                     <div className="img  bg-green-300">
                         <h1>MYA</h1>
