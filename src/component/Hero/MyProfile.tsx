@@ -10,7 +10,7 @@ export default function MyProfile() {
             <div className="col-span-3 row-span-full px-[30px] flex flex-col justify-center items-center ">
                 <div className="relative h-full w-full flex justify-center items-center">
                     <div className="absolute bottom-0 h-[80%] w-[55%] left-1/2 -translate-x-1/2 rounded-t-lg bg-linear-to-br from-[#1D546C] to-[#38A3D2]"></div>
-                    <img src="./src/assets/foto-non-formal- 1.png" alt="My Cool Photo" className="z-10 absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto" />
+                    <img src="./foto-non-formal- 1.png" alt="My Cool Photo" className="z-10 absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto" />
                 </div>
             </div>
         </section>
