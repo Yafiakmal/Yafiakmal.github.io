@@ -16,21 +16,23 @@ export default function MyProject() {
     useEffect(() => {
         fetch('/project.json')
             .then(res => res.json())
-            .then(data => {
-                setData(data);
-                setLoading(false);
-            });
+            .then(setData)
+            .catch(() => console.error("Failed to fetch project.json"))
+            .finally(() => setLoading(false));
     }, []);
 
     return (
-        <section className="bg-[#1D546C] w-full h-fit p-[60px] pt-[30px] flex font-mono">
-            <div className="title w-full h-fit flex flex-col justify-center items-center content-center">
-                <h1 className="p-[30px] text-2xl font-black text-blue-50">Latest Project</h1>
+        <section className="bg-[#1D546C] w-full p-10 pt-6 flex font-mono">
+            <div className="flex flex-col items-center w-full">
+
+                <h1 className="p-6 text-2xl font-black text-blue-50">
+                    Latest Project
+                </h1>
 
                 {loading ? (
                     <div className="text-white">Loading projects...</div>
                 ) : (
-                    <div className="project-show h-full w-full grid grid-cols-2 grid-rows-2 gap-4 place-items-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 gap-6 w-full">
                         {data.map(item => (
                             <ProjectCard
                                 key={item.id}
@@ -42,7 +44,9 @@ export default function MyProject() {
                             />
                         ))}
                     </div>
+
                 )}
+
             </div>
         </section>
     );
