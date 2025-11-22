@@ -1,7 +1,7 @@
 interface ButtonProps {
     href: string;
     children: React.ReactNode;
-    variant?: "primary" | "secondary" | "outline" | "ghost";
+    variant?: "primary" | "secondary" | "outline" | "ghost" | "luxury";
     className?: string;
 }
 
@@ -21,6 +21,10 @@ export default function Button({
             "border border-neutral-600 text-neutral-900 hover:bg-neutral-100 dark:border-neutral-400 dark:text-neutral-100 dark:hover:bg-neutral-800",
         ghost:
             "text-neutral-800 hover:bg-neutral-200 dark:text-neutral-200 dark:hover:bg-neutral-700",
+
+        // ⭐ VARIANT LUXURY (dark blue premium)
+        luxury:
+            "border-2 [border-color:#1D546C] [color:#0C2B4E] hover:bg-[#0C2B4E0D] hover:shadow-md hover:shadow-[#0C2B4E20]",
     };
 
     return (
@@ -29,4 +33,3 @@ export default function Button({
         </a>
     );
 }
-

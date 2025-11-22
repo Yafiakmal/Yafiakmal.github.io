@@ -1,9 +1,7 @@
 export default function Footer() {
     return (
-        <>
-            <div className="footer h-[50px] w-full bg-amber-50">
-
-            </div>
-        </>
+        <footer className="w-full bg-amber-50 py-4 text-center text-gray-700 text-sm">
+            © 2025 – Muhammad Yafi Akmal • Portfolio Website
+        </footer>
     )
-} 
+}
